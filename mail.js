@@ -14,12 +14,12 @@ function sendEmail() {
 
     Email.send({
       Host: "gmail.com",
-      Username: "antonin@wlodarczyk.fr",
-      Password: "9MKRestcon!",
+      Username: "arcade.studio.jeux@gmail.com",
+      Password: "Arcade2011!",
       To: 'arcade.studio.jeux@gmail.com',
-      From: "contacter.nous.arcade@gmail.com",
+      From: "arcade.studio.jeux@gmail.com",
       Subject: objet,
-      Body: body
+      Body: body+" "+mail+" "+nom+" "+prenom
     }).then(
       message => alert("Votre message contenant " + message + " nous a été envoyé avec succès !")
     ).catch(
