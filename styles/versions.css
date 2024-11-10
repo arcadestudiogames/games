@@ -19,3 +19,15 @@ h3 {
 	text-align:center;
 	padding:4em;
 }
+
+footer{
+	background-color: gray;
+	font-family: 'Courier New', Courier, monospace;
+	width: 100%;
+	position: absolute;
+	bottom: -10;
+	left: 0;
+	padding-top:2em;
+	padding-bottom:2em;
+	text-indent: 1em;
+}
