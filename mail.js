@@ -6,9 +6,11 @@ function sendEmail() {
 
   if (nom == "" || prenom == "" || mail == "" || messagecontact == "") {
     alert("Veuillez remplir tous les champs obligatoires.");
-  } else {
+  } 
+  else {
     var body = "nom: " + nom + "\n" + "prenom: " + prenom + "\n" + "email: " + mail + "\n" + "message: " + messagecontact;
     var objet = "contact de la part de " + prenom + " " + nom;
+  }
 
     Email.send({
       Host: "gmail.com",
