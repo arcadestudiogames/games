@@ -1,4 +1,4 @@
-function sendEmail() {
+function send() {
   var nom = document.getElementById("nomcontact").value;
   var prenom = document.getElementById("prenom").value;
   var mail = document.getElementById("emailcontact").value;
@@ -11,5 +11,5 @@ function sendEmail() {
     var body = "nom: " + nom + "\n" + "prenom: " + prenom + "\n" + "email: " + mail + "\n" + "message: " + messagecontact;
     var objet = "Contact de la part de " + mail;
   }
-  window.location.href="mailto:"+arcade.studio.jeux@gmail.com+"?cc="+mail+"?subject="+objet+"&body="+body;
+  window.location.href="mailto:arcade.studio.jeux@gmail.com?cc="+mail+"?subject="+objet+"&body="+body;
 }
