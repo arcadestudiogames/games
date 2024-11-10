@@ -16,3 +16,7 @@
 #emailcontact{margin-left: 25px;border-radius:15px;}
 #messagecontact{border-radius:5px;width: 328px; height: 120px;}
 .case{border-radius:150px;text-align:center;border: solid 5px black;margin-left: 20em;margin-right: 20em;}
+
+body{
+	background-color: #ffffff;
+	font-size: 80%;
