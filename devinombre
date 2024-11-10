@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeu de Devinette</title>
+    <title>Devin des Nombres</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
         input { padding: 10px; margin-top: 10px; }
@@ -12,8 +12,8 @@
 </head>
 <body>
     <h1>Devinez un nombre entre 1 et 100</h1>
-    <input type="number" id="guess" placeholder="Entrez votre guess">
-    <button onclick="checkGuess()">Devinez!</button>
+    <input type="number" id="guess" placeholder="Entrez un nombre">
+    <button onclick="checkGuess()">Essayer</button>
     <div id="message"></div>
 
     <script>
@@ -28,9 +28,9 @@
             if (userGuess === randomNumber) {
                 message.textContent = `Bravo! Vous avez deviné le nombre ${randomNumber} en ${attempts} essais.`;
             } else if (userGuess < randomNumber) {
-                message.textContent = 'Trop bas! Essayez encore.';
+                message.textContent = 'Votre nombre est trop faible.';
             } else {
-                message.textContent = 'Trop haut! Essayez encore.';
+                message.textContent = 'Votre nombre est trop important.';
             }
         }
     </script>
