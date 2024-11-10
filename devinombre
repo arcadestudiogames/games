@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Devinette</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input { padding: 10px; margin-top: 10px; }
+        #message { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Devinez un nombre entre 1 et 100</h1>
+    <input type="number" id="guess" placeholder="Entrez votre guess">
+    <button onclick="checkGuess()">Devinez!</button>
+    <div id="message"></div>
+
+    <script>
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+
+        function checkGuess() {
+            const userGuess = parseInt(document.getElementById('guess').value);
+            attempts++;
+            const message = document.getElementById('message');
+
+            if (userGuess === randomNumber) {
+                message.textContent = `Bravo! Vous avez deviné le nombre ${randomNumber} en ${attempts} essais.`;
+            } else if (userGuess < randomNumber) {
+                message.textContent = 'Trop bas! Essayez encore.';
+            } else {
+                message.textContent = 'Trop haut! Essayez encore.';
+            }
+        }
+    </script>
+</body>
+</html>
