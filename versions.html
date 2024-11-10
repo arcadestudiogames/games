@@ -6,8 +6,19 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" href="styles/versions.css">
 		<link rel="stylesheet" href="styles/nav.css">
-	</head>
-
+		<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .hidden {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
 	<body>
 			<nav>
 			<img src="images/home.png" style="height:2em;
@@ -24,7 +35,40 @@
 			</details>
 		</nav><br/><br/><br/><br/>br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		<h1><u>Page de versions :</u></h1>
-		<h3><u>Version actuelle : 1.3.0 du 08/11/2024</u></h3><br><br>
+		<h3><u>Version actuelle : 1.3.3 du 10/11/2024</u></h3><br><br>
+		
+		<h2><u>Arcade Studio Version 1.3.4 du 10 novembre 2024</u></h2>
+    <h2>Accès Protégé</h2>
+    <p>Veuillez entrer le mot de passe pour accéder aux informations :</p>
+
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button onclick="checkPassword()">Valider</button>
+
+    <div id="content" class="hidden">
+        <h3>Informations confidentielles</h3>
+        <p>1.3.3 =1 changement important, .3= changement mineur, .3 = nombre de jeu</p>
+    </div>
+
+    <script>
+        const motDePasseCorrect = 'Index';
+
+        function checkPassword() {
+            const passwordInput = document.getElementById('password').value;
+            const content = document.getElementById('content');
+
+            if (passwordInput === motDePasseCorrect) {
+                content.classList.remove('hidden');
+                content.classList.add('visible');
+                alert('Accès accordé!');
+            } else {
+                alert('Mot de passe incorrect. Veuillez réessayer.');
+            }
+        }
+    </script>
+		<ol><u>Mise à jour du comptage code des versions</u></ol>
+		<li>Ce Dimanche 8 novembre 2024,
+			Arcade Studio à mis à jour le code des versions et a commencé un nouveau jeu.
+			Vous en saurez plus prochainement.</li>
 		<h2><u>Arcade Studio Version 1.3.0 du 8 novembre 2024</u></h2>
 		<ol><u>Formulaire de Contact et de Version</u><br><br>
 			<li>Ce vendredi 8 novembre 2024,<br>
