@@ -12,9 +12,9 @@ function sendEmail(){
   Email.send({
     Host : "ssl0.ovh.net",
     Username : "antonin@wlodarczyk.fr",
-    Password : "11krapu-long",
+    Password : "9MKRestcon!",
     To : 'arcade.studio.jeux@gmail.com',
-    From : "antonin@wlodarczyk.fr",
+    From : "contacter.nous.arcade@gmail.com",
     Subject : objet,
     Body : body
 }).then(
