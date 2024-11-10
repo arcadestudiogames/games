@@ -8,8 +8,8 @@ function send() {
     alert("Veuillez remplir tous les champs obligatoires.");
   } 
   else {
-    var body = "nom: " + nom + "\n" + "prenom: " + prenom + "\n" + "email: " + mail + "\n" + "message: " + messagecontact;
+    var body = "Nom : " + nom + "\n" + "Prenom: " + prenom + "\n" + "Email: " + mail + "\n" + "message: " + messagecontact;
     var objet = "Contact de la part de " + mail;
   }
-  window.location.href="mailto:arcade.studio.jeux@gmail.com?cc="+mail+"?subject="+objet+"&body="+body;
+  window.location.href="mailto:Arcade Studio <arcade.studio.jeux@gmail.com>?cc="prenom+" "+nom +" <"+mail+">"+?subject="+objet+"&body="+body;
 }
