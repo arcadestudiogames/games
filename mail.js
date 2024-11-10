@@ -11,5 +11,5 @@ function send() {
     var body = "Nom : " + nom + "\n" + "Prenom: " + prenom + "\n" + "Email: " + mail + "\n" + "message: " + messagecontact;
     var objet = "Contact de la part de " + mail;
   }
-  window.location.href="mailto:Arcade Studio <arcade.studio.jeux@gmail.com>?cc="prenom+" "+nom +" <"+mail+">?subject="+objet+"&body="+body;
+  window.location.href="mailto:Arcade Studio <arcade.studio.jeux@gmail.com>subject="+objet+"?cc="prenom+" "+nom +" <"+mail+">"&body="+body;
 }
