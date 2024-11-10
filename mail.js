@@ -20,4 +20,4 @@ function sendEmail(){
 }).then(
   message => alert("Votre message contenant" + message + "nous a été envoyé avec succés  !")
 );
-}}
+}
