@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="memory.png">
+    <title>Jeu de Mémoire</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu de Mémoire</h1>
+        <div class="board" id="board"></div>
+        <button id="reset">Réinitialiser le Jeu</button>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
