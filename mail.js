@@ -13,7 +13,7 @@ function sendEmail() {
   }
 
     Email.send({
-      Host: "gmail.com",
+      Host: "smtp.gmail.com",
       Username: "arcade.studio.jeux@gmail.com",
       Password: "Arcade2011!",
       To: 'arcade.studio.jeux@gmail.com',
@@ -25,5 +25,4 @@ function sendEmail() {
     ).catch(
       error => alert("Erreur lors de l'envoi de votre message : " + error)
     );
-  }
 }
