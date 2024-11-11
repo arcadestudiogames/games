@@ -5,7 +5,7 @@ const canvasWidth = canvas.width;
 const canvasHeight = canvas.height;
 
 let player = {
-  x: 100,
+  x: 50,
   y: canvasHeight - 100,
   width: 50,
   height: 50,
