@@ -11,12 +11,39 @@
             font-family: Arial, sans-serif;
             margin: 50px;
         }
-        .hidden {
-            display: none;
-        }
-        .visible {
-            display: block;
-        }
+	html {
+		scroll-behavior: smooth;
+	}
+	
+	body{
+		background-color: #ffffff;
+		font-size: 80%;
+	}
+	
+	h1 {
+		text-align:center;
+	}
+	
+	li {
+		margin-left:3em;
+	}
+	
+	h3 {
+		text-align:center;
+		padding:4em;
+	}
+	
+	footer{
+		background-color: gray;
+		font-family: 'Courier New', Courier, monospace;
+		width: 100%;
+		position: absolute;
+		bottom: -10;
+		left: 0;
+		padding-top:2em;
+		padding-bottom:2em;
+		text-indent: 1em;
+	}
     </style>
 </head>
 	<body>
@@ -35,38 +62,10 @@
 			</details>
 		</nav><br/><br/><br/><br/>br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		<h1><u>Page de versions :</u></h1>
-		<h3><u>Version actuelle : 1.3.4 du 11/11/2024</u></h3><br><br>
-		<h2>Accès Protégé</h2>
-    <p>Veuillez entrer le mot de passe pour accéder aux informations :</p>
-
-    <input type="password" id="password" placeholder="Mot de passe">
-    <button onclick="checkPassword()">Valider</button>
-
-    <div id="content" class="hidden">
-        <h3>Informations confidentielles</h3>
-        <p>1.3.3 =1 changement important, .3= changement mineur, .3 = nombre de jeu</p>
-    </div>
-
-    <script>
-        const motDePasseCorrect = 'Index';
-
-        function checkPassword() {
-            const passwordInput = document.getElementById('password').value;
-            const content = document.getElementById('content');
-
-            if (passwordInput === motDePasseCorrect) {
-                content.classList.remove('hidden');
-                content.classList.add('visible');
-                alert('Accès accordé!');
-            } else {
-                alert('Mot de passe incorrect. Veuillez réessayer.');
-            }
-        }
-    </script>
-		
+		<h3><u>Version actuelle : 1.3.4 du 11/11/2024</u></h3><br><br>		
 		<h2><u>Communiqué Arcade Studio du 11 novembre 2024</u></h2>
 		<li>Chers utilisateurs,
-			vous pouvez accéder à la version béta de notre nouveau jeu, <a href="upsilon/upsilon.html">Upsilon</a>.</li>
+			vous pouvez accéder à la version béta de notre nouveau jeu, <a href="games/upsilon">Upsilon</a>.</li>
 		<h2><u>Arcade Studio Version 1.3.3 du 10 novembre 2024</u></h2>
 		<ol><u>Mise à jour du comptage code des versions</u></ol>
 		<li>Ce Dimanche 10 novembre 2024,
