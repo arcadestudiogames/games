@@ -12,16 +12,34 @@ let player = {
   width: 50,
   height: 50,
   velocityY: 0,
-  velocityX: 0, // Nouvelle propriété pour la vitesse horizontale
+  velocityX: 0,
   jumping: false,
 };
 
-// Plateformes
-const platforms = [
-  { x: 0, y: canvasHeight - 50, width: canvasWidth, height: 50 },
-  { x: 200, y: canvasHeight - 200, width: 100, height: 20 },
-  { x: 500, y: canvasHeight - 350, width: 150, height: 20 },
+// Niveaux
+const levels = [
+  // Niveau 1
+  {
+    platforms: [
+      { x: 0, y: canvasHeight - 50, width: canvasWidth, height: 50 },
+      { x: 200, y: canvasHeight - 200, width: 100, height: 20 },
+      { x: 500, y: canvasHeight - 350, width: 150, height: 20 },
+    ]
+  },
+  // Niveau 2
+  {
+    platforms: [
+      { x: 0, y: canvasHeight - 50, width: canvasWidth, height: 50 },
+      { x: 100, y: canvasHeight - 250, width: 50, height: 20 },
+      { x: 300, y: canvasHeight - 400, width: 100, height: 20 },
+      { x: 600, y: canvasHeight - 150, width: 75, height: 20 },
+    ]
+  }
+  // ... Ajoutez d'autres niveaux ici
 ];
+
+// Niveau actuel
+let currentLevel = 0;
 
 // Gravité
 const gravity = 0.5;
@@ -49,7 +67,7 @@ function drawPlayer() {
 
 // Fonction pour dessiner les plateformes
 function drawPlatforms() {
-  platforms.forEach(platform => {
+  levels[currentLevel].platforms.forEach(platform => {
     ctx.fillStyle = 'brown';
     ctx.fillRect(platform.x, platform.y, platform.width, platform.height);
   });
@@ -58,7 +76,7 @@ function drawPlatforms() {
 // Fonction pour vérifier les collisions
 function checkCollisions() {
   // Vérifier les collisions avec les plateformes
-  platforms.forEach(platform => {
+  levels[currentLevel].platforms.forEach(platform => {
     if (
       player.x < platform.x + platform.width &&
       player.x + player.width > platform.x &&
@@ -122,4 +140,3 @@ function gameLoop() {
 
 // Démarrer la boucle de jeu
 gameLoop();
-
