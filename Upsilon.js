@@ -31,6 +31,26 @@ document.addEventListener('keyup', (e) => {
   keys[e.code] = false;
 });
 
+window.onkeydown = function(e) {
+    var key = e.keyCode || e.which;
+    switch (key) {
+        case 37:
+        //-Move left
+        break;
+    case 39:
+        //-Move right
+        break;
+    case 38:
+        //-Move up
+        break;
+    case 40:
+        //-Move down
+        break;
+    default:
+        break;
+    }
+};
+
 function drawPlayer() {
   ctx.fillStyle = 'red';
   ctx.fillRect(player.x, player.y, player.width, player.height);
