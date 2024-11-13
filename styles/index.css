@@ -55,7 +55,7 @@ h2{
 	src: url(fonts/game.ttf) format('truetype');
 }
 
-*{
+h*{
 	overflow: auto;
 }
 
