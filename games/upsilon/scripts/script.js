@@ -22,7 +22,7 @@ const levels = [
   {
     platforms: [
       { x: 0, y: canvasHeight - 50, width: canvasWidth, height: 50 },
-      { x: 200, y: canvasHeight - 200, width: 100, height: 20 },
+      { x: 200, y: canvasHeight - 200, width: 150, height: 20 },
       { x: 500, y: canvasHeight - 350, width: 200, height: 20 },
     ]
   },
