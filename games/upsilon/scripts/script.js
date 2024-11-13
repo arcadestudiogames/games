@@ -59,6 +59,13 @@ document.addEventListener('keyup', (e) => {
   keys[e.code] = false;
 });
 
+const playerImage = new Image();
+playerImage.src = 'games/upsilon/images/upsilon.png';
+
+function drawPlayer() {
+  ctx.save(); 
+
+  ctx.scale(-1, 1);
 // Fonction pour dessiner le joueur
 function drawPlayer() {
   ctx.fillStyle = 'red';
