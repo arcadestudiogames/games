@@ -8,6 +8,15 @@ body{
 	font-size: 80%;
 }
 
+display: none;
+input#menuBurger {
+	display: none;
+}
+
+.contenu {
+	transition : margin .5s ease; 
+}
+
 footer{
 	background-color: gray;
 	font-family: 'Courier New', Courier, monospace;
