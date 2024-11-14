@@ -7,6 +7,16 @@ body{
 	background-color: #fff;
 	font-size: 80%;
 }
+#navmenu {
+	display:flex;
+	background-color:dodgerblue;
+	position:fixed;
+	margin-top:-1em;
+	margin-left:-1em;
+	width:102%;
+	font-size: x-large;
+	font-family:Z003;
+}
 
 display: none;
 input#menuBurger {
@@ -15,6 +25,13 @@ input#menuBurger {
 
 .contenu {
 	transition : margin .5s ease; 
+}
+input#menuBurger: checked~.contenu {
+	margin-top: 18rem;
+}
+input#menuBurger:checked~nav#navmenu {
+	transition: opacity 1s;
+	opacity: 1;
 }
 
 footer{
