@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Omega-Investir</title>
+    <link rel="icon" href="Image/Logo.jpg">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Investir.css">
+    <script src="compte.js"></script> <!-- Nouveau fichier JavaScript -->
+    <style>
+        nav {
+            display: flex;
+            background-color: #FFD700;
+            position: fixed;
+            margin-top: -1em;
+            margin-left: -1em;
+            width: 102%;
+            font-size: x-large;
+        }
+        .product-container {
+            display: flex;
+            align-items: center;
+            margin-left: 5em;
+            margin-bottom: 2em;
+        }
+        #countdown {
+            font-size: large;
+            margin-left: 5em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="home.png" style="height:2em;margin-left:1em;margin-top:1.3em;margin-right:-4em;cursor:pointer;" alt="home" onclick="window.location.href='file:///C:/Users/calix/Desktop/Web/Bank%20Omega/home.html';">
+        <a href="investir/Investir.html" class="button" style="background-position: center right; height:2em;margin-left:5em;margin-top:1.8em;margin-right:-4em;cursor:pointer">Mon Compte</a>
+    </nav>
+    <h3>Votre Argent</h3>
+    <div style="margin-left: 5em;">
+        <h3>Produits Possédés</h3>
+        <p>Ecoluxe : <span id="compteEcoluxe">0</span></p>
+        <p>Autre Produit : <span id="compteAutreProduit">0</span></p>
+        <p>Argent : <span id="argent">100</span> €</p> <!-- Argent initial -->
+    </div>
+    <script src="monCompte.js"></script> <!-- Assurez-vous que ce fichier est référencé ici -->
+</body>
+</html>

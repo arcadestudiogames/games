@@ -1,0 +1,38 @@
+nav {
+	display:flex;
+	background-color:#FFD700;
+	position:fixed;
+	margin-top:-1em;
+	margin-left:-1em;
+	width:102%;
+	font-size: x-large;
+}
+summary{
+	display: block;
+}
+
+details {
+	margin-left:5em;
+	margin-top:2em;
+	margin-bottom:1.5em;
+	font-size:1.1em;
+}
+
+.liste {
+	cursor:default;
+}
+
+.details {
+	background-color:dodgerblue;
+	margin-top:0em;
+	border:1px solid black;
+	border-radius:5px;
+	position:fixed;
+	padding:10px 10px;
+}
+
+.mn {
+	color:white;
+	text-decoration:none;
+	padding:2px 2px;
+}
