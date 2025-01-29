@@ -1,0 +1,35 @@
+body {
+    background-color: #fbf8fd;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 30%;
+    margin-top: 15%;
+    padding: 0;
+}
+
+img{
+    display:flex;
+    float:left;
+    margin-left:-25%;
+}
+
+h1 {
+    color: black;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border:solid 0px;
+    border-radius: 3px;
+}
+#changeBtn{
+    background-color:#005bd4;
+    color:#ffffff;
+}
+#changeBtn2{
+    background-color:#d6d6d7;
+}
